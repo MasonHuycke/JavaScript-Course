@@ -167,7 +167,6 @@ if (markBMI > johnBMI) {
 } else {
   console.log(`Mark's BMI (${markBMI}) is the same as John's (${johnBMI})!`)
 }
-*/
 
 //type conversion
 const inputYear = `1991`;
@@ -178,3 +177,4 @@ console.log(Number(`Jonas`));
 
 //type conercison
 console.log(`I am`);
+*/
