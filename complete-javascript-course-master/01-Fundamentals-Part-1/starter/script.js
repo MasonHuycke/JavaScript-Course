@@ -177,4 +177,62 @@ console.log(Number(`Jonas`));
 
 //type conercison
 console.log(`I am`);
-*/
+
+
+//5 falsy values: 0, ``, undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(`Jonas`));
+console.log(Boolean({}));
+console.log(Boolean(``));
+
+const money = 100;
+if (money) {
+  console.log(`Don't spend it all;`);
+} else {
+  console.log(`You should get a job!`);
+}
+
+const age = 18;
+if (age === 18) console.log(`You just became an adult :D`);
+
+const favouriteNumber = prompt(`Whats your favourite number?`);
+
+console.log(favouriteNumber);
+console.log(typeof favouriteNumber);
+
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log(`Sarah is able to drive`);
+// } else {
+//   console.log(`Someone else should drive...`);
+// }
+
+const isTired = false;
+
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive!`);
+} else {
+  console.log(`Someone else should drive...`);
+}*/
+
+const dolphinsAvgScore = (96 + 108 + 89) / 3;
+const koalasAvgScore = (88 + 91 + 110) / 3;
+
+if (dolphinsAvgScore > koalasAvgScore){
+console.log(`Dolphins win!!`)
+} else if (dolphinsAvgScore < koalasAvgScore){
+console.log(`Koalas win!!`)
+}else {
+console.log(`Its a tie!!`)
+}
