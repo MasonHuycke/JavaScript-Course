@@ -224,15 +224,47 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log(`Sarah is able to drive!`);
 } else {
   console.log(`Someone else should drive...`);
-}*/
+}
 
 const dolphinsAvgScore = (96 + 108 + 89) / 3;
 const koalasAvgScore = (88 + 91 + 110) / 3;
 
-if (dolphinsAvgScore > koalasAvgScore){
-console.log(`Dolphins win!!`)
-} else if (dolphinsAvgScore < koalasAvgScore){
-console.log(`Koalas win!!`)
-}else {
-console.log(`Its a tie!!`)
+if (dolphinsAvgScore > koalasAvgScore && dolphinsAvgScore >= 100) {
+  console.log(`Dolphins win!!`);
+} else if (dolphinsAvgScore < koalasAvgScore && koalasAvgScore >= 100) {
+  console.log(`Koalas win!!`);
+} else if (
+  dolphinsAvgScore === koalasAvgScore &&
+  dolphinsAvgScore >= 100 &&
+  koalasAvgScore >= 100
+) {
+  console.log(`Its a tie!!`);
+} else {
+  console.log(`No winners!`);
+}
+*/
+
+const day = `monday`;
+
+switch (day) {
+  case `monday`: //strict compairison
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case `tuesday`:
+    console.log(`prepare theory videos`);
+    break;
+  case `wednesday`:
+  case `thursday`:
+    console.log(`Write code examples`);
+    break;
+  case `friday`:
+    console.log(`record videos`);
+    break;
+  case `saturday`:
+  case `sunday`:
+    console.log(`enjoy the weekend`);
+    break;
+  default:
+    console.log(`not a valid day`);
 }
