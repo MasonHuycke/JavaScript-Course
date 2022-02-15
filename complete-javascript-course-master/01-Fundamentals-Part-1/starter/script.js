@@ -242,7 +242,6 @@ if (dolphinsAvgScore > koalasAvgScore && dolphinsAvgScore >= 100) {
 } else {
   console.log(`No winners!`);
 }
-*/
 
 const day = `monday`;
 
@@ -268,3 +267,32 @@ switch (day) {
   default:
     console.log(`not a valid day`);
 }
+
+const age = 23;
+age >= 18;
+// ? console.log(`I like the drink wine`)
+// : console.log(`I like to drink water`);
+
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = `wine`;
+} else {
+  drink2 = `water`;
+}
+console.log(drink2);
+
+console.log(`I like to drink ${drink2}`);
+
+
+let bill = 275;
+let tipPercentage = bill >= 50 && bill <= 300 ? 15 : 20;
+
+console.log(
+  `The bill was ${bill}, the tip was ${
+    (bill * tipPercentage) / 100
+  }, and the total value was ${(bill * tipPercentage) / 100 + bill}.`
+);
+*/
